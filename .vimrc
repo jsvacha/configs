@@ -28,6 +28,10 @@ set clipboard=unnamedplus
 set cursorline
 set scrolloff=2
 
+"General UI
+set wildmenu
+set laststatus=2
+
 "Theme
 set background=dark
 
