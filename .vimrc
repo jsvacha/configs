@@ -35,6 +35,3 @@ set laststatus=2
 
 "Theme
 set background=dark
-
-"FZF
-source /usr/share/doc/fzf/examples/fzf.vim
