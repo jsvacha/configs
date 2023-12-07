@@ -36,6 +36,5 @@ set laststatus=2
 "Theme
 set background=dark
 
-"Treat different files differently
-filetype plugin indent on
-autocmd FileType make setlocal noexpandtab
+"FZF
+source /usr/share/doc/fzf/examples/fzf.vim
