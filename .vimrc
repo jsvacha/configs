@@ -4,6 +4,7 @@ set hidden
 "Readability
 syntax enable
 set number
+set relativenumber
 set numberwidth=3
 set wrap
 
