@@ -36,3 +36,6 @@ set laststatus=2
 
 "Theme
 set background=dark
+
+"Uncomment after installing pathogen
+"execute pathogen#infect()

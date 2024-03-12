@@ -1,3 +1,3 @@
 ### My Customization Files
 
-.vimrc: goes in ~/.vimrc
+Paths are all laid out as if project directory was your home directory. 
