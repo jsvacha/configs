@@ -1,3 +1,6 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 "Buffers
 set hidden
 
@@ -36,6 +39,3 @@ set laststatus=2
 
 "Theme
 set background=dark
-
-"Uncomment after installing pathogen
-"execute pathogen#infect()
