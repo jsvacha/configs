@@ -39,3 +39,7 @@ set laststatus=2
 
 "Theme
 set background=dark
+
+"For finding files
+set path+=**
+
