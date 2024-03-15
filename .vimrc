@@ -43,3 +43,5 @@ set background=dark
 "For finding files
 set path+=**
 
+"Wayland clipboard
+xnoremap y y:call system("wl-copy", @")<cr>
