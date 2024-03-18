@@ -43,5 +43,17 @@ set background=dark
 "For finding files
 set path+=**
 
+"Leader
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+"ALE Config
+let g:ale_completion_enabled = 1
+
+"ALE Shortcuts
+nnoremap <leader>g :ALEGoToDefinition hidden<CR>
+nnoremap <leader>n :ALENext -wrap -error<CR>
+nnoremap <leader>p :ALEPrevious -wrap -error<CR>
+
 "Wayland clipboard
 xnoremap y y:call system("wl-copy", @")<cr>
