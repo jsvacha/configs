@@ -47,6 +47,13 @@ set path+=**
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
+"Save view (folds, etc.)
+augroup remember_folds
+    autocmd!
+    autocmd BufWinLeave * mkview
+    autocmd BufWinEnter * silent! loadview
+augroup END
+
 "ALE Config
 let g:ale_completion_enabled = 1
 
