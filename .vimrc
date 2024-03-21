@@ -55,5 +55,16 @@ nnoremap <leader>g :ALEGoToDefinition hidden<CR>
 nnoremap <leader>n :ALENext -wrap -error<CR>
 nnoremap <leader>p :ALEPrevious -wrap -error<CR>
 
+"For showing function names
+fun! ShowFuncName()
+    let lnum = line(".")
+    let col = col(".")
+    echohl ModeMsg
+    echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+    echohl None
+    call search("\\%" . lnum . "l" . "\\%" . col . "c")
+endfun
+map f :call ShowFuncName() <CR>
+
 "Wayland clipboard
 xnoremap y y:call system("wl-copy", @")<cr>
