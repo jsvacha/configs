@@ -1,3 +1,5 @@
+alias vi='nvim'
+alias vim='nvim'
 alias vb='vim ~/.bashrc'
 alias sb='source ~/.bashrc'
 alias grep='grep --color=auto'
