@@ -12,9 +12,23 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-require("lazy").setup("plugins")
 
-require ("config.mappings")
+require("lazy").setup({
+    spec = {
+        { import = "plugins" },
+    },
+})
+
 require ("config.options")
+require ("config.mappings")
 require ("config.autocmds")
 
+local lsp_zero = require('lsp-zero')
+
+lsp_zero.on_attach(function(client, bufnr)
+    -- see :help lsp-zero-keybindings
+    -- to learn the available actions
+    lsp_zero.default_keymaps({buffer = bufnr})
+end)
+
+require('lspconfig').clangd.setup({})

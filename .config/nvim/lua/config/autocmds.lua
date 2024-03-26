@@ -10,10 +10,3 @@ vim.api.nvim_create_autocmd ({'BufWinEnter'}, {
     command = "silent! loadview",
 })
 
-vim.lsp.start({
-  name = 'clangd-server',
-  cmd = {'clangd'},
-  root_dir = vim.fs.dirname(vim.fs.find({'CMakeLists.txt'}, 
-    { upward = true })[1]),
-})
-
