@@ -19,4 +19,3 @@ vim.opt.clipboard = 'unnamedplus'
 -- Color scheme
 vim.cmd.colorscheme "catppuccin-mocha"
 
-
