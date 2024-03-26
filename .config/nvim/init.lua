@@ -1,4 +1,4 @@
-require ("config.mappings")
+vim.g.mapleader = " "
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -14,6 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
+require ("config.mappings")
 require ("config.options")
 require ("config.autocmds")
 
