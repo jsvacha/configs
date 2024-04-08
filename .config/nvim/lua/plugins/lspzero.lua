@@ -9,4 +9,12 @@ return {
         'hrsh7th/nvim-cmp',
         'L3MON4D3/LuaSnip',
     },
+    config = function()
+        local lsp_zero = require('lsp-zero')
+        lsp_zero.on_attach(function(client, bufnr)
+            lsp_zero.default_keymaps({buffer = bufnr})
+        end)
+        require('lspconfig').clangd.setup({})
+        vim.keymap.set('n', '<leader>o', ":ClangdSwitchSourceHeader<CR>")
+    end
 }
