@@ -1,6 +1,5 @@
 -- Numbering
 vim.opt.number = true
-vim.opt.relativenumber = true
 vim.opt.numberwidth = 3
 
 -- Tabs
