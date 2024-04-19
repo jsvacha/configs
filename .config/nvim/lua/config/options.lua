@@ -18,3 +18,5 @@ vim.opt.clipboard = 'unnamedplus'
 -- Color scheme
 vim.cmd.colorscheme "catppuccin-mocha"
 
+-- Padding around cursor
+vim.opt.scrolloff = 5
