@@ -1,0 +1,7 @@
+[color]
+	ui = auto
+[user]
+	name = James Svacha
+	email = jbsvacha@gmail.com
+[core]
+	editor = nvim
