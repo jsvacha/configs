@@ -1,0 +1,13 @@
+BasedOnStyle: LLVM
+AlwaysBreakTemplateDeclarations: Yes
+BraceWrapping:
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeWhile: true
+BreakInheritanceList: AfterComma
+BreakConstructorInitializers: AfterColon
+PackConstructorInitializers: Never
+IndentCaseLabels: true
+PointerAlignment: Left
+SpaceAfterTemplateKeyword: false
+SpacesInContainerLiterals: false
