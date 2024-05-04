@@ -13,13 +13,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-    spec = {
-        { import = "plugins" },
-    },
-})
-
-require ("config.options")
-require ("config.mappings")
 require ("config.autocmds")
+require ("config.mappings")
+require ("config.options")
+
+require("lazy").setup("plugins")
 
