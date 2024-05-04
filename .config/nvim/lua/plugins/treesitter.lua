@@ -3,9 +3,14 @@ return {
     dependencies = {
         'nvim-treesitter/nvim-treesitter-context',
     },
+    build = ":TSUpdate",
+    lazy = false,
     config = function()
-        vim.keymap.set("n", "[c", function()
-            require("treesitter-context").go_to_context(vim.v.count1)
-        end, { silent = true })
+        local config = require("nvim-treesitter.configs")
+        config.setup({
+            auto_install = true,
+            ensure_installed = {"c", "cpp", "cmake", "lua", "python"},
+            highlight = { enable = true },
+        })
     end
 }
