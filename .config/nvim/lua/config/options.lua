@@ -17,3 +17,7 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- Padding around cursor
 vim.opt.scrolloff = 5
+
+-- Show trailing whitespace
+vim.opt.listchars["trailing"] = "-"
+vim.opt.list = true
