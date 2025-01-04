@@ -1,3 +1,3 @@
-### My Customization Files
+### My Config Files
 
-Paths are all laid out as if project directory was your home directory. 
+Repo is laid out as if project directory is my home directory.
