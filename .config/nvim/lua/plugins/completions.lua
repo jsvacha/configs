@@ -10,7 +10,7 @@ return {
         },
     },
     {
-        "hrs7th/nvim-cmp",
+        "hrsh7th/nvim-cmp",
         config = function()
             local cmp = require("cmp")
             require("luasnip.loaders.from_vscode").lazy_load()
