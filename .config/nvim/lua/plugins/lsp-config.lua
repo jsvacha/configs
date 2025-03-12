@@ -37,6 +37,9 @@ return {
             lspconfig.cmake.setup({
                 capabilities = capabilities
             })
+            lspconfig.julials.setup({
+                capabilities = capabilities
+            })
             vim.keymap.set('n', '<leader>E', vim.diagnostic.goto_prev)
             vim.keymap.set('n', '<leader>e', vim.diagnostic.goto_next)
             vim.keymap.set('n', '<leader>d', vim.lsp.buf.definition)
